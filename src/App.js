@@ -1,7 +1,5 @@
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import AddTask from "./Components/AddTask";
-import TaskList from "./Components/TaskList";
 import Edit from "./Pages/Edit";
 import Home from "./Pages/Home";
 

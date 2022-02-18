@@ -8,17 +8,17 @@ import {
 const initialState = {
   tasks: [
     {
-      id: Math.random(),
+      id: 0,
       text: "Task1",
       done: false,
     },
     {
-      id: Math.random(),
+      id: 1,
       text: "Task2",
       done: false,
     },
     {
-      id: Math.random(),
+      id: 2,
       text: "Task3",
       done: false,
     },
@@ -31,7 +31,7 @@ const taskReducer = (state = initialState, { type, payload }) => {
     case ADD_TASK:
       return { ...state, tasks: [...state.tasks, payload] };
     case DELETE_TASK:
-      return { ...state, tasks: state.tasks.filter((el) => el.id !== payload) };
+      return { ...state, tasks: state.tasks.filter((el) => el.id != payload) };
     case EDIT_TASK:
       return {
         ...state,
